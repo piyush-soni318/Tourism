@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    
+    <style>
+        
+        /* Basic CSS Reset */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-image: url('bg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #272829;
+            color: #fff;
+            padding: 20px;
+            text-align: left;
+            display: flex;
+            justify-content: space-between; /* Align items to the start and end of the header */
+            align-items: center; /* Center vertically */
+        }
+        
+        /* Navigation bar Styles */
+        nav {
+            
+            display: flex;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px; /* Add space between links */
+        }
+        .home{
+            color:#AA14F0;
+        }
+        nav a:hover {
+            color: #AA14F0;
+        }
+
+        /* Right Side Section Styles */
+        .rightside {
+            position: absolute;
+            top: 40%;
+            right: 5%;
+            background-color: #D8D9DA;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+        }
+
+        /* Links Styles */
+        .rightside a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            background-color: #272829;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            transition: transform 0.2s ease;
+        }
+
+        .rightside a:hover {
+            color: #AA14F0;
+            transform: scale(1.05);
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding-top: 100px; /* Add space for the header */
+            }
+            .rightside {
+                position: relative;
+                top: 0;
+                right: 0;
+                width: auto;
+                background-color: #D8D9DA;
+                border-radius: 10px;
+                padding: 20px 10px;
+                text-align: center;
+            }
+            .nao {
+                display: none;
+            }
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            margin: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tour Agency</h1>
+        <nav>
+            <a href="piyush.html" class="home">Home</a>
+            <a href="tour.html" class="tours">Tours</a>
+            <a href="#" class="customer">Customer Care</a>
+            <a href="#" class="about">About</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section>
+            <img class="nao" src="main.png" alt="Main Image">
+        </section>
+        <section class="rightside">
+            <h2>Looking to go somewhere?</h2>
+            <p>Don't worry, we have got you covered up!!</p>
+            <p>From beautiful New Zealand to bustling NYC!!</p>
+            <a class="availtr" href="tour.html">Look at Tours available</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Responsive Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

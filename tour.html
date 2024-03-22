@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours - Tour Agency</title>
+    <style>
+        /* Basic CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #EEEDEB;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #272829;
+            color: #fff;
+            padding: 20px;
+            text-align: left;
+            display: flex;
+            justify-content: space-between; /* Align items to the start and end of the header */
+            align-items: center; /* Center vertically */
+        }
+
+        /* Navigation bar Styles */
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px; /* Add space between links */
+        }
+        .tours{
+            color: #AA14F0;
+        }
+        nav a:hover {
+            color: #AA14F0;
+            text-decoration: none;
+        }
+
+        /* Main Content Styles */
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 0 20px;
+            position: relative; /* Ensure proper positioning for child elements */
+        }
+
+        .tour-packages {
+            display: flex;
+            flex-wrap: wrap; /* Allow packages to wrap to the next line */
+            justify-content: space-between; /* Distribute packages evenly */
+            margin-top: 20px;
+        }
+
+        .tour-package {
+            width: calc(33.3% - 20px); /* Three packages per row with spacing */
+            margin-bottom: 20px;
+            background-color: #D8D9DA;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.2s ease; /* Add transition for smooth animation */
+        }
+
+        .tour-package img {
+            width: 100%; /* Make images fill the container */
+            border-radius: 5px;
+        }
+
+        .tour-package h3 {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        .tour-package p {
+            margin-top: 10px;
+        }
+
+        /* Add hover effect */
+        .tour-package:hover {
+            transform: scale(1.05); /* Grow by 5% on hover */
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding-top: 100px; /* Add space for the header */
+            }
+            .tour-package {
+                width: calc(50% - 10px); /* Two packages per row on smaller screens */
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .tour-package {
+                width: 100%; /* Single package per row on smaller screens */
+            }
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            margin: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tour Agency</h1>
+        <nav>
+            <a href="piyush.html" class="home">Home</a>
+            <a href="tour.html" class="tours">Tours</a>
+            <a href="#" class="customer">Customer Care</a>
+            <a href="#" class="about">About</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Popular Tours</h2>
+        <div class="tour-packages">
+            <!-- Tour Package 1 -->
+            <div class="tour-package">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Sydney_Australia._%2821339175489%29.jpg" alt="Tour Package 1">
+                <h3>Sydney - Australia</h3>
+                <p>5 Nights and 4 days</p>
+            </div>
+            <!-- Tour Package 2 -->
+            <div class="tour-package">
+                <img src="placeholder2.jpg" alt="Tour Package 2">
+                <h3>Tour Package 2</h3>
+                <p>Description of Tour Package 2</p>
+            </div>
+            <!-- Tour Package 3 -->
+            <div class="tour-package">
+                <img src="placeholder3.jpg" alt="Tour Package 3">
+                <h3>Tour Package 3</h3>
+                <p>Description of Tour Package 3</p>
+            </div>
+            <!-- Tour Package 4 -->
+            <div class="tour-package">
+                <img src="placeholder4.jpg" alt="Tour Package 4">
+                <h3>Tour Package 4</h3>
+                <p>Description of Tour Package 4</p>
+            </div>
+            <!-- Tour Package 5 -->
+            <div class="tour-package">
+                <img src="placeholder5.jpg" alt="Tour Package 5">
+                <h3>Tour Package 5</h3>
+                <p>Description of Tour Package 5</p>
+            </div>
+            <!-- Tour Package 6 -->
+            <div class="tour-package">
+                <img src="placeholder6.jpg" alt="Tour Package 6">
+                <h3>Tour Package 6</h3>
+                <p>Description of Tour Package 6</p>
+            </div>
+            <!-- Tour Package 7 -->
+            <div class="tour-package">
+                <img src="placeholder7.jpg" alt="Tour Package 7">
+                <h3>Tour Package 7</h3>
+                <p>Description of Tour Package 7</p>
+            </div>
+            <!-- Tour Package 8 -->
+            <div class="tour-package">
+                <img src="placeholder8.jpg" alt="Tour Package 8">
+                <h3>Tour Package 8</h3>
+                <p>Description of Tour Package 8</p>
+            </div>
+            <!-- Tour Package 9 -->
+            <div class="tour-package">
+                <img src="placeholder9.jpg" alt="Tour Package 9">
+                <h3>Tour Package 9</h3>
+                <p>Description of Tour Package 9</p>
+            </div>
+            <!-- Tour Package 10 -->
+            <div class="tour-package">
+                <img src="placeholder10.jpg" alt="Tour Package 10">
+                <h3>Tour Package 10</h3>
+                <p>Description of Tour Package 10</p>
+            </div>
+            <!-- Tour Package 11 -->
+            <div class="tour-package">
+                <img src="placeholder11.jpg" alt="Tour Package 11">
+                <h3>Tour Package 11</h3>
+                <p>Description of Tour Package 11</p>
+            </div>
+            <!-- Tour Package 12 -->
+            <div class="tour-package">
+                <img src="placeholder12.jpg" alt="Tour Package 12">
+                <h3>Tour Package 12</h3>
+                <p>Description of Tour Package 12</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tour Agency. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
